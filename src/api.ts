@@ -220,56 +220,56 @@ export interface SearchResult {
 //개봉영화
 export async function getMovies() {
   return (
-    await fetch(`${BASE_PATH}/movie/now_playing?api_key=${API_KEY}&language=ko`)
+    await fetch(`${BASE_PATH}/movie/now_playing?api_key=${API_KEY}&language=en`)
   ).json();
 }
 
 // 곧 개봉 예정 영화
 export async function getUpcoming() {
   return (
-    await fetch(`${BASE_PATH}/movie/upcoming?api_key=${API_KEY}&language=ko`)
+    await fetch(`${BASE_PATH}/movie/upcoming?api_key=${API_KEY}&language=en`)
   ).json();
 }
 
 //최고의 영화
 export async function getTopRated() {
   return (
-    await fetch(`${BASE_PATH}/movie/top_rated?api_key=${API_KEY}&language=ko`)
+    await fetch(`${BASE_PATH}/movie/top_rated?api_key=${API_KEY}&language=en`)
   ).json();
 }
 
 //영화 세부정보 - https://developers.themoviedb.org/3/movies/get-movie-details
 export async function getMovieDetail(movieId: string | undefined) {
   return (
-    await fetch(`${BASE_PATH}/movie/${movieId}?api_key=${API_KEY}&language=ko`)
+    await fetch(`${BASE_PATH}/movie/${movieId}?api_key=${API_KEY}&language=en`)
   ).json();
 }
 
 // 최신 tv show
 export async function getTvlatest() {
   return (
-    await fetch(`${BASE_PATH}/tv/airing_today?api_key=${API_KEY}&language=ko`)
+    await fetch(`${BASE_PATH}/tv/airing_today?api_key=${API_KEY}&language=en`)
   ).json();
 }
 
 // 인기 tv show
 export async function getTvpopular() {
   return (
-    await fetch(`${BASE_PATH}/tv/popular?api_key=${API_KEY}&language=ko`)
+    await fetch(`${BASE_PATH}/tv/popular?api_key=${API_KEY}&language=en`)
   ).json();
 }
 
 //최고 평점 tv show
 export async function getTvTopRated() {
   return (
-    await fetch(`${BASE_PATH}/tv/top_rated?api_key=${API_KEY}&language=ko`)
+    await fetch(`${BASE_PATH}/tv/top_rated?api_key=${API_KEY}&language=en`)
   ).json();
 }
 
 //영화 세부정보
 export async function getTvDetail(tvId: string | undefined) {
   return (
-    await fetch(`${BASE_PATH}/tv/${tvId}?api_key=${API_KEY}&language=ko`)
+    await fetch(`${BASE_PATH}/tv/${tvId}?api_key=${API_KEY}&language=en`)
   ).json();
 }
 
@@ -277,7 +277,7 @@ export async function getTvDetail(tvId: string | undefined) {
 export async function getSearch(keyword: string) {
   return (
     await fetch(
-      `${BASE_PATH}/search/multi?api_key=${API_KEY}&language=ko&query=${keyword}&include_adult=true&region=kr`
+      `${BASE_PATH}/search/multi?api_key=${API_KEY}&language=ko&query=${keyword}&include_adult=true&region=en`
     )
   ).json();
 }
@@ -288,6 +288,6 @@ export async function getSearchDetail(
   id: string | undefined
 ) {
   return (
-    await fetch(`${BASE_PATH}/${type}/${id}?api_key=${API_KEY}&language=ko`)
+    await fetch(`${BASE_PATH}/${type}/${id}?api_key=${API_KEY}&language=en`)
   ).json();
 }
