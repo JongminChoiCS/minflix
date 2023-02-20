@@ -97,7 +97,7 @@ const Header = () => {
   return (
     <Nav variants={navVariants} animate={navAnimation} initial={"top"}>
       <Col>
-        <Link to="/">
+        <Link to="/minflix">
           <Logo
             xmlns="http://www.w3.org/2000/svg"
             width="1024"
