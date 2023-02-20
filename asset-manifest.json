@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/minflix/static/js/main.0870cd91.js",
+    "main.js": "/minflix/static/js/main.96c1a51c.js",
     "index.html": "/minflix/index.html",
-    "main.0870cd91.js.map": "/minflix/static/js/main.0870cd91.js.map"
+    "main.96c1a51c.js.map": "/minflix/static/js/main.96c1a51c.js.map"
   },
   "entrypoints": [
-    "static/js/main.0870cd91.js"
+    "static/js/main.96c1a51c.js"
   ]
 }
